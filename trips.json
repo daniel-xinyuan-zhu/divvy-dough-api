@@ -1,0 +1,17 @@
+{
+  "trips": [{
+    "id": 1,
+    "name": "Berkeley",
+    "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
+    "start": "10/3/17",
+    "end": "10/5/17"
+    },
+    {
+    "id": 2,
+    "name": "San Francisco",
+    "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
+    "start": "10/3/17",
+    "end": "10/5/17"
+    }
+  ]
+}

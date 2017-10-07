@@ -1,0 +1,22 @@
+{
+  "person": [{
+    "name": "Daniel",
+    "balance": 100,
+    "id": 1
+    },
+    {
+    "name": "Jonathan",
+    "balance": 110,
+    "id": 2
+    },
+    {
+    "name": "Youngeon",
+    "balance": 120,
+    "id": 3
+    },
+    {
+    "name": "Kevin",
+    "balance": 130,
+    "id": 4
+    }]
+}
