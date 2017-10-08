@@ -1,17 +1,27 @@
 {
   "trips": [{
     "id": 0,
-    "name": "Berkeley",
+    "trip_name": "Berkeley",
     "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
-    "start": "10/3/17",
-    "end": "10/5/17"
+    "amount_spent": 100,
+    "start_date": "10/3/17",
+    "end_date": "10/5/17"
     },
     {
     "id": 1,
     "name": "San Francisco",
     "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
-    "start": "10/3/17",
-    "end": "10/5/17"
+    "start_date": "10/3/17",
+    "end_date": "10/5/17"
+    }
+  ],
+  "past_trips": [
+    {
+      "id": 3,
+      "name": "San Jose",
+      "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
+      "start_date": "10/3/17",
+      "end_date": "10/5/17"
     }
   ]
 }

@@ -1,20 +1,5 @@
 var express = require('express');
 var router = express.Router();
-
-/*
-GET /trips
-List of current and past trips for this user
-{ trips: […], pastTrips: […] }
-GET /trips/:trip_id
-POST /trips/:trip_id/deposit
-Only applicable to non-leaders. Deposits the amount specified in the request into the group leader’s account.
-POST /trips/:trip_id/withdraw
-Only applicable to non-leaders. Withdraws the specified amount from the leader’s account.
-POST /trips/:trip_id/charge
-Only applicable to leaders. Charges the account(s) specified in the request by the specified amount.
-POST /trips/:trip_id/complete_trip
-Only applicable to leaders. Refunds everyone’s unspent balance. Moves the trip into the past trips category.
-*/
 var fs = require("fs");
 
 // GET '/ping'
@@ -24,10 +9,30 @@ router.get('/ping', function(req, res){
 });
 
 router.get('/trips', function(req, res){
-  fs.readFile( __dirname + "/" + "trips.json", 'utf8', function (err, data) {
-      console.log( data );
-      res.end( data );
-  });
+  var total = [];
+  var trips = fs.readFileSync(__dirname + "/" + "trips.json");
+  var jsonTrips = JSON.parse(trips);
+  for (var i = 0; i < jsonTrips.trips.length; i++)
+  {
+    for(var j = 0; j<jsonTrips.trips[i].members.length; j++)
+    {
+      if (jsonTrips.trips[i].members[j] == nameOfPerson)
+      {
+        total.push(jsonTrips.trips[i]);
+      }
+    }
+  }
+  for (var i = 0; i < jsonTrips.past_trips.length; i++)
+  {
+    for(var j = 0; j<jsonTrips.past_trips[i].members.length; j++)
+    {
+      if (jsonTrips.past_trips[i].members[j] == nameOfPerson)
+      {
+        total.push(jsonTrips.past_trips[i]);
+      }
+    }
+  }
+  console.log(total);
   res.end();
 });
 
