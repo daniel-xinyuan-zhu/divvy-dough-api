@@ -1,13 +1,13 @@
 {
   "transaction": [{
-    "id": 1,
+    "id": 0,
     "name": "Thai Food",
     "time": "10/7/17",
     "sub_transactions": [
       {
   			"name": "Thai Food",
-        "from": "Jonathan",
-  			"amount": 2.55,
+        "from": "Daniel",
+  			"amount": -2.55,
   			"time": "5:23 PM 10/7/17"
       },
       {
@@ -20,24 +20,184 @@
     "amount": 25
   },
   {
-    "id": 1,
+    "id": 0,
     "name": "peruvian Food",
     "time": "10/7/17",
     "sub_transactions": [
       {
         "name": "Peruvian Food",
         "from": "Daniel",
-        "amount": 23.55,
+        "amount": -13.55,
         "time": "12:23 PM 10/8/17"
       },
       {
         "name": "Peruvian Food",
         "from": "Kevin",
-        "amount": 23.55,
+        "amount": 13.55,
         "time": "12:23 PM 10/8/17"
       }
     ],
     "amount": 25
-    }
+  },
+  {
+    "id": 0,
+    "name": "Smoke's Poutinerie",
+    "time": "10/7/17",
+    "sub_transactions": [
+      {
+        "name": "Smoke's Poutinerie",
+        "from": "Daniel",
+        "amount": -5.60,
+        "time": "11:57 AM 10/4/17"
+      },
+      {
+        "name": "Smoke's Poutinerie",
+        "from": "Kevin",
+        "amount": 5.60,
+        "time": "11:57 AM 10/4/17"
+      }
+    ],
+    "amount": 25
+  },
+  {
+    "id": 0,
+    "name": "Big C Ticket",
+    "time": "10/7/17",
+    "sub_transactions": [
+      {
+        "name": "Big C Ticket",
+        "from": "Daniel",
+        "amount": -5.00,
+        "time": "4:23 PM 10/5/17"
+      },
+      {
+        "name": "Big C Ticket",
+        "from": "Kevin",
+        "amount": 5.00,
+        "time": "4:23 PM 10/5/17"
+      }
+    ],
+    "amount": 25
+  },
+  {
+    "id": 0,
+    "name": "Kayaking",
+    "time": "10/7/17",
+    "sub_transactions": [
+      {
+        "name": "Kayaking",
+        "from": "Daniel",
+        "amount": -15.00,
+        "time": "4:47 PM 10/3/17"
+      },
+      {
+        "name": "Peruvian Food",
+        "from": "Kevin",
+        "amount": 15.00,
+        "time": "4:47 PM 10/3/17"
+      }
+    ],
+    "amount": 25
+  },
+  {
+    "id": 1,
+    "name": "Pier 39",
+    "time": "10/7/17",
+    "sub_transactions": [
+      {
+  			"name": "Pier 39",
+        "from": "Daniel",
+  			"amount": -22.55,
+  			"time": "2:23 PM 10/6/17"
+      },
+      {
+        "name": "Pier 39",
+        "from": "Youngeon",
+        "amount": 2.55,
+        "time": "2:23 PM 10/6/17"
+      }
+    ],
+    "amount": 25
+  },
+  {
+    "id": 1,
+    "name": "Ghiradelli",
+    "time": "10/6/17",
+    "sub_transactions": [
+      {
+        "name": "Peruvian Food",
+        "from": "Daniel",
+        "amount": -13.55,
+        "time": "12:27 PM 10/6/17"
+      },
+      {
+        "name": "Peruvian Food",
+        "from": "Kevin",
+        "amount": 13.55,
+        "time": "12:27 PM 10/6/17"
+      }
+    ],
+    "amount": 25
+  },
+  {
+    "id": 1,
+    "name": "Bart Tickets",
+    "time": "10/4/17",
+    "sub_transactions": [
+      {
+        "name": "Bart Tickets",
+        "from": "Daniel",
+        "amount": -5.60,
+        "time": "11:57 AM 10/4/17"
+      },
+      {
+        "name": "Bart Tickets",
+        "from": "Kevin",
+        "amount": 5.60,
+        "time": "11:57 AM 10/4/17"
+      }
+    ],
+    "amount": 25
+  },
+  {
+    "id": 1,
+    "name": "Boba Guys",
+    "time": "10/7/17",
+    "sub_transactions": [
+      {
+        "name": "Boba Guys",
+        "from": "Daniel",
+        "amount": -5.00,
+        "time": "4:23 PM 10/5/17"
+      },
+      {
+        "name": "Boba Guys",
+        "from": "Kevin",
+        "amount": 5.00,
+        "time": "4:23 PM 10/5/17"
+      }
+    ],
+    "amount": 25
+  },
+  {
+    "id": 1,
+    "name": "San Francisco Zoo",
+    "time": "10/3/17",
+    "sub_transactions": [
+      {
+        "name": "San Francisco Zoo",
+        "from": "Daniel",
+        "amount": -25.00,
+        "time": "4:47 PM 10/3/17"
+      },
+      {
+        "name": "San Francisco Zoo",
+        "from": "Kevin",
+        "amount": 25.00,
+        "time": "4:47 PM 10/3/17"
+      }
+    ],
+    "amount": 25
+  }
   ]
 }

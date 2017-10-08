@@ -2,19 +2,19 @@
   "trips": [{
     "id": 0,
     "trip_name": "Berkeley",
-    "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
+    "members": ["Daniel", "Youngeon", "Jonathan", "Kevin"],
     "amount_spent": 100,
     "balance": 100,
     "start_date": "10/3/17",
-    "end_date": "10/5/17"
+    "end_date": "10/10/17"
     },
     {
     "id": 1,
     "trip_name": "San Francisco",
-    "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
+    "members": ["Daniel", "Youngeon", "Jonathan", "Kevin"],
     "amount_spent": 150,
     "balance": 100,
-    "start_date": "10/6/17",
+    "start_date": "10/3/17",
     "end_date": "10/8/17"
     }
   ],
@@ -22,20 +22,29 @@
     {
     "id": 2,
     "trip_name": "Shanghai",
-    "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
+    "members": ["Daniel", "Youngeon", "Jonathan", "Kevin"],
     "amount_spent": 1500,
     "balance": 0,
-    "start_date": "10/6/17",
-    "end_date": "10/8/17"
+    "start_date": "9/03/17",
+    "end_date": "9/14/17"
     },
     {
     "id": 3,
     "trip_name": "San Jose",
-    "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
+    "members": ["Daniel", "Youngeon", "Jonathan", "Kevin"],
     "amount_spent": 120,
     "balance": 0,
-    "start_date": "10/6/17",
-    "end_date": "10/8/17"
-    }
+    "start_date": "9/23/17",
+    "end_date": "9/30/17"
+  },
+  {
+  "id": 4,
+  "trip_name": "New York",
+  "members": ["Daniel", "Youngeon", "Jonathan", "Kevin"],
+  "amount_spent": 120,
+  "balance": 0,
+  "start_date": "9/14/17",
+  "end_date": "9/23/17"
+  }
   ]
 }

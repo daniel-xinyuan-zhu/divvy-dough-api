@@ -198,7 +198,7 @@ router.post('/trips/:trip_id/withdraw', function (req,res){
   file.person[req.body.user_id].balance -= parseFloat(req.body.amount);
   if (file.person[req.body.user_id].balance < 0)
   {
-    file.person[req.body.user_id].balance += req.body.amount;
+    file.person[req.body.user_id].balance += parseFloat(req.body.amount);
     res.sendStatus(400);
     res.send(JSON.stringify("false")); // this line
     res.end();
@@ -215,14 +215,34 @@ router.post('/trips/:trip_id/withdraw', function (req,res){
 router.post('/trips/:trip_id/charge', function (req,res){
   var fileName = __dirname + "/" + "users.json";
   var file = require(fileName);
-  console.log(req.params);
-  file.person[0].balance = 0; // replace this with the parameter contained in the request
-
+  var trips = fs.readFileSync(__dirname + "/" + "trips.json");
+  var jsonTrips = JSON.parse(trips);
+  console.log(req.body);
+  var userList = [];
+  for (var i = 0; i < jsonTrips.trips.length; i++)
+  {
+    if(jsonTrips[i].trip_name == req.name)
+    {
+        userList = jsonTrips[i].members;
+    }
+  }
+  var counter = 0;
+  // update users.json file (balance field)
+  for (var i = 0; i < file.length; i++)
+  {
+    if (file.person[i].name == userList[counter])
+    {
+      counter ++;
+      file.person[i].balance -= parseFloat(req.body.amount);
+    }
+  }
   fs.writeFile(fileName, JSON.stringify(file), function (err) {
     if (err) return console.log(err);
     console.log(JSON.stringify(file, null, 2));
     console.log('writing to ' + fileName);
   });
+  var fileTwoName = __dirname + "/" + ".json";
+  var fileTwo = require(fileTwoName);
   res.send(JSON.stringify("true"));
   res.end();
   // append to transactions.json as well
@@ -230,6 +250,7 @@ router.post('/trips/:trip_id/charge', function (req,res){
 });
 
 router.post('/trips/:trip_id/complete_trip', function (req,res){
+
   // append to trips.json
   // append to users.json
 });
