@@ -34,6 +34,19 @@ router.get('/trips/user_id=:user_id', function(req, res){
     {
       if (jsonTrips.trips[i].members[j] == nameOfPerson)
       {
+        if (req.params.user_id == jsonUsers.person[0].id) {
+          jsonTrips.trips[i].balance = 0
+          for (var k = 0; k < jsonUsers.person.length; k++) {
+            jsonTrips.trips[i].balance += jsonUsers.person[k].balance
+          }
+        } else {
+          for (var k = 0; k < jsonUsers.person.length; k++) {
+            if (req.params.user_id == jsonUsers.person[k].id) {
+              jsonTrips.trips[i].balance = jsonUsers.person[k].balance
+              break
+            }
+          }
+        }
         currentTrips.push(jsonTrips.trips[i]);
       }
     }
@@ -239,16 +252,38 @@ router.post('/trips/:trip_id/leader/charge', function (req,res){
     // }
   }
   console.log(file)
-  fs.writeFile(fileName, JSON.stringify(file), function (err) {
+  fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
     if (err) return console.log(err);
     console.log(JSON.stringify(file, null, 2));
     console.log('writing to ' + fileName);
   });
-  // var fileTwoName = __dirname + "/" + ".json";
-  // var fileTwo = require(fileTwoName);
+  var transactionsFileName = __dirname + "/" + "transactions.json";
+  var jsonTransactions = JSON.parse(fs.readFileSync(transactionsFileName));
+  var newTransactionObject = {
+    id: 0,
+    name: req.body.name,
+    time: '10/8/17',
+    sub_transactions: [],
+    amount: -parseFloat(req.body.amount) * file.person.length
+  }
+  for (var i = 0; i < file.person.length; i++) {
+    newTransactionObject.sub_transactions.push({
+      name: req.body.name,
+      time: '1:18 AM 10/8/17',
+      amount: -parseFloat(req.body.amount),
+      from: file.person[i].name
+    })
+  }
+  jsonTransactions.transaction.unshift(newTransactionObject)
+  fs.writeFile(transactionsFileName, JSON.stringify(jsonTransactions, null, 2), function (err) {
+    if (err) return console.log(err);
+    console.log(JSON.stringify(jsonTransactions, null, 2));
+    console.log('writing to ' + transactionsFileName);
+  });
   res.send(JSON.stringify("true"));
   res.end();
   // append to transactions.json as well
+
   // append to trips.json as well
 });
 

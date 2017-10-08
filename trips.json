@@ -7,18 +7,18 @@
     "balance": 100,
     "start_date": "10/3/17",
     "end_date": "10/10/17"
-    },
+    }
+  ],
+  "past_trips": [
     {
     "id": 1,
     "trip_name": "San Francisco",
     "members": ["Daniel", "Youngeon", "Jonathan", "Kevin"],
     "amount_spent": 150,
-    "balance": 100,
+    "balance": 0,
     "start_date": "10/3/17",
     "end_date": "10/8/17"
-    }
-  ],
-  "past_trips": [
+    },
     {
     "id": 2,
     "trip_name": "Shanghai",

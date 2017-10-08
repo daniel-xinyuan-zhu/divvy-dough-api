@@ -1,1 +1,24 @@
-{"person":[{"name":"Daniel","balance":1000,"id":1},{"name":"Jonathan","balance":1.18,"id":2},{"name":"Youngeon","balance":120,"id":3},{"name":"Kevin","balance":130,"id":4}]}
+{
+  "person": [
+    {
+      "name": "Daniel",
+      "balance": 1645.2,
+      "id": 1
+    },
+    {
+      "name": "Jonathan",
+      "balance": 2065.98,
+      "id": 2
+    },
+    {
+      "name": "Youngeon",
+      "balance": 2184.8,
+      "id": 3
+    },
+    {
+      "name": "Kevin",
+      "balance": 2194.8,
+      "id": 4
+    }
+  ]
+}

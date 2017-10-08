@@ -1,203 +1,268 @@
 {
-  "transaction": [{
-    "id": 0,
-    "name": "Thai Food",
-    "time": "10/7/17",
-    "sub_transactions": [
-      {
-  			"name": "Thai Food",
-        "from": "Daniel",
-  			"amount": -2.55,
-  			"time": "5:23 PM 10/7/17"
-      },
-      {
-        "name": "Thai Food",
-        "from": "Youngeon",
-        "amount": 2.55,
-        "time": "5:23 PM 10/7/17"
-      }
-    ],
-    "amount": 25
-  },
-  {
-    "id": 0,
-    "name": "peruvian Food",
-    "time": "10/7/17",
-    "sub_transactions": [
-      {
-        "name": "Peruvian Food",
-        "from": "Daniel",
-        "amount": -13.55,
-        "time": "12:23 PM 10/8/17"
-      },
-      {
-        "name": "Peruvian Food",
-        "from": "Kevin",
-        "amount": 13.55,
-        "time": "12:23 PM 10/8/17"
-      }
-    ],
-    "amount": 25
-  },
-  {
-    "id": 0,
-    "name": "Smoke's Poutinerie",
-    "time": "10/7/17",
-    "sub_transactions": [
-      {
-        "name": "Smoke's Poutinerie",
-        "from": "Daniel",
-        "amount": -5.60,
-        "time": "11:57 AM 10/4/17"
-      },
-      {
-        "name": "Smoke's Poutinerie",
-        "from": "Kevin",
-        "amount": 5.60,
-        "time": "11:57 AM 10/4/17"
-      }
-    ],
-    "amount": 25
-  },
-  {
-    "id": 0,
-    "name": "Big C Ticket",
-    "time": "10/7/17",
-    "sub_transactions": [
-      {
-        "name": "Big C Ticket",
-        "from": "Daniel",
-        "amount": -5.00,
-        "time": "4:23 PM 10/5/17"
-      },
-      {
-        "name": "Big C Ticket",
-        "from": "Kevin",
-        "amount": 5.00,
-        "time": "4:23 PM 10/5/17"
-      }
-    ],
-    "amount": 25
-  },
-  {
-    "id": 0,
-    "name": "Kayaking",
-    "time": "10/7/17",
-    "sub_transactions": [
-      {
-        "name": "Kayaking",
-        "from": "Daniel",
-        "amount": -15.00,
-        "time": "4:47 PM 10/3/17"
-      },
-      {
-        "name": "Peruvian Food",
-        "from": "Kevin",
-        "amount": 15.00,
-        "time": "4:47 PM 10/3/17"
-      }
-    ],
-    "amount": 25
-  },
-  {
-    "id": 1,
-    "name": "Pier 39",
-    "time": "10/7/17",
-    "sub_transactions": [
-      {
-  			"name": "Pier 39",
-        "from": "Daniel",
-  			"amount": -22.55,
-  			"time": "2:23 PM 10/6/17"
-      },
-      {
-        "name": "Pier 39",
-        "from": "Youngeon",
-        "amount": 2.55,
-        "time": "2:23 PM 10/6/17"
-      }
-    ],
-    "amount": 25
-  },
-  {
-    "id": 1,
-    "name": "Ghiradelli",
-    "time": "10/6/17",
-    "sub_transactions": [
-      {
-        "name": "Peruvian Food",
-        "from": "Daniel",
-        "amount": -13.55,
-        "time": "12:27 PM 10/6/17"
-      },
-      {
-        "name": "Peruvian Food",
-        "from": "Kevin",
-        "amount": 13.55,
-        "time": "12:27 PM 10/6/17"
-      }
-    ],
-    "amount": 25
-  },
-  {
-    "id": 1,
-    "name": "Bart Tickets",
-    "time": "10/4/17",
-    "sub_transactions": [
-      {
-        "name": "Bart Tickets",
-        "from": "Daniel",
-        "amount": -5.60,
-        "time": "11:57 AM 10/4/17"
-      },
-      {
-        "name": "Bart Tickets",
-        "from": "Kevin",
-        "amount": 5.60,
-        "time": "11:57 AM 10/4/17"
-      }
-    ],
-    "amount": 25
-  },
-  {
-    "id": 1,
-    "name": "Boba Guys",
-    "time": "10/7/17",
-    "sub_transactions": [
-      {
-        "name": "Boba Guys",
-        "from": "Daniel",
-        "amount": -5.00,
-        "time": "4:23 PM 10/5/17"
-      },
-      {
-        "name": "Boba Guys",
-        "from": "Kevin",
-        "amount": 5.00,
-        "time": "4:23 PM 10/5/17"
-      }
-    ],
-    "amount": 25
-  },
-  {
-    "id": 1,
-    "name": "San Francisco Zoo",
-    "time": "10/3/17",
-    "sub_transactions": [
-      {
-        "name": "San Francisco Zoo",
-        "from": "Daniel",
-        "amount": -25.00,
-        "time": "4:47 PM 10/3/17"
-      },
-      {
-        "name": "San Francisco Zoo",
-        "from": "Kevin",
-        "amount": 25.00,
-        "time": "4:47 PM 10/3/17"
-      }
-    ],
-    "amount": 25
-  }
+  "transaction": [
+    {
+      "id": 0,
+      "name": "Rent (too darn high)",
+      "time": "10/8/17",
+      "sub_transactions": [
+        {
+          "name": "Rent (too darn high)",
+          "time": "1:18 AM 10/8/17",
+          "amount": -2250,
+          "from": "Daniel"
+        },
+        {
+          "name": "Rent (too darn high)",
+          "time": "1:18 AM 10/8/17",
+          "amount": -2250,
+          "from": "Jonathan"
+        },
+        {
+          "name": "Rent (too darn high)",
+          "time": "1:18 AM 10/8/17",
+          "amount": -2250,
+          "from": "Youngeon"
+        },
+        {
+          "name": "Rent (too darn high)",
+          "time": "1:18 AM 10/8/17",
+          "amount": -2250,
+          "from": "Kevin"
+        }
+      ],
+      "amount": -9000
+    },
+    {
+      "id": 0,
+      "name": "Sardines",
+      "time": "10/8/17",
+      "sub_transactions": [
+        {
+          "name": "Sardines",
+          "time": "1:18 AM 10/8/17",
+          "amount": -100,
+          "from": "Daniel"
+        },
+        {
+          "name": "Sardines",
+          "time": "1:18 AM 10/8/17",
+          "amount": -100,
+          "from": "Jonathan"
+        },
+        {
+          "name": "Sardines",
+          "time": "1:18 AM 10/8/17",
+          "amount": -100,
+          "from": "Youngeon"
+        },
+        {
+          "name": "Sardines",
+          "time": "1:18 AM 10/8/17",
+          "amount": -100,
+          "from": "Kevin"
+        }
+      ],
+      "amount": -400
+    },
+    {
+      "id": 0,
+      "name": "Thai Food",
+      "time": "10/7/17",
+      "sub_transactions": [
+        {
+          "name": "Thai Food",
+          "from": "Daniel",
+          "amount": -2.55,
+          "time": "5:23 PM 10/7/17"
+        },
+        {
+          "name": "Thai Food",
+          "from": "Youngeon",
+          "amount": -2.55,
+          "time": "5:23 PM 10/7/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 0,
+      "name": "Peruvian Food",
+      "time": "10/7/17",
+      "sub_transactions": [
+        {
+          "name": "Peruvian Food",
+          "from": "Daniel",
+          "amount": -13.55,
+          "time": "12:23 PM 10/8/17"
+        },
+        {
+          "name": "Peruvian Food",
+          "from": "Kevin",
+          "amount": -13.55,
+          "time": "12:23 PM 10/8/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 0,
+      "name": "Smoke's Poutinerie",
+      "time": "10/7/17",
+      "sub_transactions": [
+        {
+          "name": "Smoke's Poutinerie",
+          "from": "Daniel",
+          "amount": -5.6,
+          "time": "11:57 AM 10/4/17"
+        },
+        {
+          "name": "Smoke's Poutinerie",
+          "from": "Kevin",
+          "amount": -5.6,
+          "time": "11:57 AM 10/4/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 0,
+      "name": "Big C Ticket",
+      "time": "10/7/17",
+      "sub_transactions": [
+        {
+          "name": "Big C Ticket",
+          "from": "Daniel",
+          "amount": -5,
+          "time": "4:23 PM 10/5/17"
+        },
+        {
+          "name": "Big C Ticket",
+          "from": "Kevin",
+          "amount": -5,
+          "time": "4:23 PM 10/5/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 0,
+      "name": "Kayaking",
+      "time": "10/7/17",
+      "sub_transactions": [
+        {
+          "name": "Kayaking",
+          "from": "Daniel",
+          "amount": -15,
+          "time": "4:47 PM 10/3/17"
+        },
+        {
+          "name": "Peruvian Food",
+          "from": "Kevin",
+          "amount": -15,
+          "time": "4:47 PM 10/3/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 1,
+      "name": "Pier 39",
+      "time": "10/7/17",
+      "sub_transactions": [
+        {
+          "name": "Pier 39",
+          "from": "Daniel",
+          "amount": -22.55,
+          "time": "2:23 PM 10/6/17"
+        },
+        {
+          "name": "Pier 39",
+          "from": "Youngeon",
+          "amount": -2.55,
+          "time": "2:23 PM 10/6/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 1,
+      "name": "Ghiradelli",
+      "time": "10/6/17",
+      "sub_transactions": [
+        {
+          "name": "Peruvian Food",
+          "from": "Daniel",
+          "amount": -13.55,
+          "time": "12:27 PM 10/6/17"
+        },
+        {
+          "name": "Peruvian Food",
+          "from": "Kevin",
+          "amount": -13.55,
+          "time": "12:27 PM 10/6/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 1,
+      "name": "Bart Tickets",
+      "time": "10/4/17",
+      "sub_transactions": [
+        {
+          "name": "Bart Tickets",
+          "from": "Daniel",
+          "amount": -5.6,
+          "time": "11:57 AM 10/4/17"
+        },
+        {
+          "name": "Bart Tickets",
+          "from": "Kevin",
+          "amount": -5.6,
+          "time": "11:57 AM 10/4/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 1,
+      "name": "Boba Guys",
+      "time": "10/7/17",
+      "sub_transactions": [
+        {
+          "name": "Boba Guys",
+          "from": "Daniel",
+          "amount": -5,
+          "time": "4:23 PM 10/5/17"
+        },
+        {
+          "name": "Boba Guys",
+          "from": "Kevin",
+          "amount": -5,
+          "time": "4:23 PM 10/5/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 1,
+      "name": "San Francisco Zoo",
+      "time": "10/3/17",
+      "sub_transactions": [
+        {
+          "name": "San Francisco Zoo",
+          "from": "Daniel",
+          "amount": -25,
+          "time": "4:47 PM 10/3/17"
+        },
+        {
+          "name": "San Francisco Zoo",
+          "from": "Kevin",
+          "amount": -25,
+          "time": "4:47 PM 10/3/17"
+        }
+      ],
+      "amount": -25
+    }
   ]
 }
