@@ -106,24 +106,27 @@ router.get('/trips/:trip_id/leader/transactions', function(req, res){
 
 router.get('/trips/:trip_id/leader/balance', function(req, res){
   var balances = fs.readFileSync(__dirname + "/" + "users.json");
-  var transactions = fs.readFileSync(__dirname + "/" + "transactions.json");
+  var transaction = fs.readFileSync(__dirname + "/" + "transactions.json");
   var jsonBalances = JSON.parse(balances);
-  var jsonTransactions = JSON.parse(transactions);
-  var returnValue = [];
+  var jsonTransactions = JSON.parse(transaction);
+  var returnValue;
+  var list = [];
   for (var i = 0; i < jsonBalances.person.length; i++)
   {
-    var trans = [];
+    /*
+    var transactions = [];
     for (var j = 0; j < jsonTransactions.transaction.length; j++)
     {
       for (var k = 0; k < jsonTransactions.transaction[j].sub_transactions.length; k++)
       {
-        if (jsonTransactions.transaction[j].sub_transactions[k].name == jsonBalances.person[i].name)
+        if (jsonTransactions.transaction[j].sub_transactions[k].from === jsonBalances.person[i].name)
         {
-          trans.push[jsonTransactions.transaction[j].subtransactions[k]];
+          transactions.push(jsonTransactions.transaction[j].sub_transactions[k]);
         }
       }
-    }
-    returnValue.push({[jsonBalances.person[i].name]: jsonBalances.person[i].balance, trans});
+    }*/
+    list.push({"name": jsonBalances.person[i].name, "balance": jsonBalances.person[i].balance});
+    returnValue = {list};
   }
   res.send(returnValue);
   res.end();
@@ -197,7 +200,7 @@ router.post('/trips/:trip_id/withdraw', function (req,res){
   {
     file.person[req.body.user_id].balance += req.body.amount;
     res.sendStatus(400);
-    res.send(JSON.stringify("false"));
+    res.send(JSON.stringify("false")); // this line
     res.end();
   }
   fs.writeFile(fileName, JSON.stringify(file), function (err) {
@@ -230,16 +233,6 @@ router.post('/trips/:trip_id/complete_trip', function (req,res){
   // append to trips.json
   // append to users.json
 });
-
-/*
-router.get('/:id', function(req, res){
-   res.send('GET route on things. Id entered is ' + req.params.id);
-});
-
-router.get('/:name/:id', function(req, res) {
-   res.send('id: ' + req.params.id + ' and name: ' + req.params.name);
-});
-*/
 
 router.post('/', function(req, res){
    res.send('POST route on things.');
