@@ -5,15 +5,19 @@
     "time": "10/7/17",
     "sub_transactions": [
       {
+  			"name": "Thai Food",
         "from": "Jonathan",
-        "amount": 2.53
+  			"amount": 2.55,
+  			"time": "5:23 PM 10/7/17"
       },
       {
+        "name": "Thai Food",
         "from": "Youngeon",
-        "amount": 2.53
+        "amount": 2.55,
+        "time": "5:23 PM 10/7/17"
       }
     ],
-    "total": 25
+    "amount": 25
   },
   {
     "id": 1,
@@ -21,15 +25,19 @@
     "time": "10/7/17",
     "sub_transactions": [
       {
+        "name": "Peruvian Food",
         "from": "Daniel",
-        "amount": 2.53
+        "amount": 23.55,
+        "time": "12:23 PM 10/8/17"
       },
       {
+        "name": "Peruvian Food",
         "from": "Kevin",
-        "amount": 2.53
+        "amount": 23.55,
+        "time": "12:23 PM 10/8/17"
       }
     ],
-    "total": 25
+    "amount": 25
     }
   ]
 }

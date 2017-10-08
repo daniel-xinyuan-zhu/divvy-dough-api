@@ -4,24 +4,38 @@
     "trip_name": "Berkeley",
     "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
     "amount_spent": 100,
+    "balance": 100,
     "start_date": "10/3/17",
     "end_date": "10/5/17"
     },
     {
     "id": 1,
-    "name": "San Francisco",
+    "trip_name": "San Francisco",
     "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
-    "start_date": "10/3/17",
-    "end_date": "10/5/17"
+    "amount_spent": 150,
+    "balance": 100,
+    "start_date": "10/6/17",
+    "end_date": "10/8/17"
     }
   ],
   "past_trips": [
     {
-      "id": 3,
-      "name": "San Jose",
-      "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
-      "start_date": "10/3/17",
-      "end_date": "10/5/17"
+    "id": 2,
+    "trip_name": "Shanghai",
+    "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
+    "amount_spent": 1500,
+    "balance": 1000,
+    "start_date": "10/6/17",
+    "end_date": "10/8/17"
+    },
+    {
+    "id": 3,
+    "trip_name": "San Jose",
+    "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
+    "amount_spent": 120,
+    "balance": 130,
+    "start_date": "10/6/17",
+    "end_date": "10/8/17"
     }
   ]
 }
