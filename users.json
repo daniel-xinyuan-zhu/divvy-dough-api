@@ -2,22 +2,22 @@
   "person": [
     {
       "name": "Daniel",
-      "balance": 1645.2,
+      "balance": 645.2,
       "id": 1
     },
     {
       "name": "Jonathan",
-      "balance": 2065.98,
+      "balance": 565.98,
       "id": 2
     },
     {
       "name": "Youngeon",
-      "balance": 2184.8,
+      "balance": 884.8,
       "id": 3
     },
     {
       "name": "Kevin",
-      "balance": 2194.8,
+      "balance": 594.8,
       "id": 4
     }
   ]
