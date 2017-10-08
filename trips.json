@@ -24,7 +24,7 @@
     "trip_name": "Shanghai",
     "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
     "amount_spent": 1500,
-    "balance": 1000,
+    "balance": 0,
     "start_date": "10/6/17",
     "end_date": "10/8/17"
     },
@@ -33,7 +33,7 @@
     "trip_name": "San Jose",
     "members": ["Jonathan", "Youngeon", "Daniel", "Kevin"],
     "amount_spent": 120,
-    "balance": 130,
+    "balance": 0,
     "start_date": "10/6/17",
     "end_date": "10/8/17"
     }

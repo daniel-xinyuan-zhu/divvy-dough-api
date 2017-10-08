@@ -12,31 +12,44 @@ router.get('/ping', function(req, res){
   res.sendStatus(200);
 });
 
-router.get('/trips', function(req, res){
-  var total = [];
+router.get('/trips/user_id=:user_id', function(req, res){
+  var total;
   // make a hash table
   var trips = fs.readFileSync(__dirname + "/" + "trips.json");
   var jsonTrips = JSON.parse(trips);
+  var users = fs.readFileSync(__dirname + "/" + "users.json");
+  var jsonUsers = JSON.parse(users);
+  var nameOfPerson;
+  for (var i = 0; i < jsonUsers.person.length; i++)
+  {
+    if(jsonUsers.person[i].id == req.params.user_id)
+    {
+      nameOfPerson = jsonUsers.person[i].name;
+    }
+  }
+  var currentTrips = [];
   for (var i = 0; i < jsonTrips.trips.length; i++)
   {
     for(var j = 0; j<jsonTrips.trips[i].members.length; j++)
     {
       if (jsonTrips.trips[i].members[j] == nameOfPerson)
       {
-        total.push(jsonTrips.trips[i]);
+        currentTrips.push(jsonTrips.trips[i]);
       }
     }
   }
+  var pastTrips = [];
   for (var i = 0; i < jsonTrips.past_trips.length; i++)
   {
     for(var j = 0; j<jsonTrips.past_trips[i].members.length; j++)
     {
       if (jsonTrips.past_trips[i].members[j] == nameOfPerson)
       {
-        total.push(jsonTrips.past_trips[i]);
+        pastTrips.push(jsonTrips.past_trips[i]);
       }
     }
   }
+  total = {["trips"]: currentTrips, ["past_trips"]: pastTrips};
   console.log(JSON.stringify(total));
   res.send(JSON.stringify(total));
   res.end();
@@ -93,11 +106,24 @@ router.get('/trips/:trip_id/leader/transactions', function(req, res){
 
 router.get('/trips/:trip_id/leader/balance', function(req, res){
   var balances = fs.readFileSync(__dirname + "/" + "users.json");
+  var transactions = fs.readFileSync(__dirname + "/" + "transactions.json");
   var jsonBalances = JSON.parse(balances);
+  var jsonTransactions = JSON.parse(transactions);
   var returnValue = [];
   for (var i = 0; i < jsonBalances.person.length; i++)
   {
-    returnValue.push({[jsonBalances.person[i].name]: jsonBalances.person[i].balance});
+    var trans = [];
+    for (var j = 0; j < jsonTransactions.transaction.length; j++)
+    {
+      for (var k = 0; k < jsonTransactions.transaction[j].sub_transactions.length; k++)
+      {
+        if (jsonTransactions.transaction[j].sub_transactions[k].name == jsonBalances.person[i].name)
+        {
+          trans.push[jsonTransactions.transaction[j].subtransactions[k]];
+        }
+      }
+    }
+    returnValue.push({[jsonBalances.person[i].name]: jsonBalances.person[i].balance, trans});
   }
   res.send(returnValue);
   res.end();
