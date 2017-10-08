@@ -3,5 +3,33 @@
     "id": 1,
     "name": "Thai Food",
     "time": "10/7/17",
-    "amount": 25
+    "sub_transactions": [
+      {
+        "from": "Jonathan",
+        "amount": 2.53
+      },
+      {
+        "from": "Youngeon",
+        "amount": 2.53
+      }
+    ],
+    "total": 25
+  },
+  {
+    "id": 1,
+    "name": "peruvian Food",
+    "time": "10/7/17",
+    "sub_transactions": [
+      {
+        "from": "Daniel",
+        "amount": 2.53
+      },
+      {
+        "from": "Kevin",
+        "amount": 2.53
+      }
+    ],
+    "total": 25
+    }
+  ]
 }

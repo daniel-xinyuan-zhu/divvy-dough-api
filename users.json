@@ -1,25 +1,4 @@
 {
-   "user1" : {
-    "name" : "mahesh",
-	  "password" : "password1",
-	  "profession" : "teacher",
-	  "id": 1
-   },
-   "user2" : {
-      "name" : "suresh",
-	  "password" : "password2",
-	  "profession" : "librarian",
-	  "id": 2
-   },
-   "user3" : {
-      "name" : "ramesh",
-	  "password" : "password3",
-	  "profession" : "clerk",
-	  "id": 3
-   }
-}
-
-{
   "person": [{
     "name": "Daniel",
     "balance": 100,
@@ -40,12 +19,4 @@
     "balance": 130,
     "id": 4
     }]
-}
-
-{
-  "transaction": [{
-    "id": 1,
-    "name": "Thai Food",
-    "time": "10/7/17",
-    "amount": 25
 }
