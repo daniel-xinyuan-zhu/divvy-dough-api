@@ -1,1 +1,1 @@
-{"person":[{"name":"Daniel","balance":1000,"id":1},{"name":"Jonathan","balance":null,"id":2},{"name":"Youngeon","balance":120,"id":3},{"name":"Kevin","balance":130,"id":4}]}
+{"person":[{"name":"Daniel","balance":1000,"id":1},{"name":"Jonathan","balance":0,"id":2},{"name":"Youngeon","balance":120,"id":3},{"name":"Kevin","balance":130,"id":4}]}

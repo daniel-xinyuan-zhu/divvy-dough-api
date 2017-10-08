@@ -97,10 +97,7 @@ router.get('/trips/:trip_id/leader/balance', function(req, res){
   var returnValue = [];
   for (var i = 0; i < jsonBalances.person.length; i++)
   {
-    var output = [];
-    output.push(jsonBalances.person[i].name);
-    output.push(jsonBalances.person[i].balance);
-    returnValue.push(output);
+    returnValue.push({[jsonBalances.person[i].name]: jsonBalances.person[i].balance});
   }
   res.send(returnValue);
   res.end();
