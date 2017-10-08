@@ -263,6 +263,106 @@
         }
       ],
       "amount": -25
+    },
+    {
+      "id": 2,
+      "name": "Oriental Pearl Tower",
+      "time": "9/7/17",
+      "sub_transactions": [
+        {
+          "name": "Oriental Pearl Tower",
+          "from": "Daniel",
+          "amount": -22.55,
+          "time": "2:23 PM 9/6/17"
+        },
+        {
+          "name": "Oriental Pearl Tower",
+          "from": "Youngeon",
+          "amount": -2.55,
+          "time": "2:23 PM 9/6/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 2,
+      "name": "Hai Di Lao Hotpot",
+      "time": "9/6/17",
+      "sub_transactions": [
+        {
+          "name": "Hai Di Lao Hotpot",
+          "from": "Daniel",
+          "amount": -30.55,
+          "time": "12:27 PM 9/6/17"
+        },
+        {
+          "name": "Hai Di Lao Hotpot",
+          "from": "Kevin",
+          "amount": -30.55,
+          "time": "12:27 PM 9/6/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 2,
+      "name": "Subway Tickets",
+      "time": "9/4/17",
+      "sub_transactions": [
+        {
+          "name": "Subway Tickets",
+          "from": "Daniel",
+          "amount": -5.6,
+          "time": "11:57 AM 9/4/17"
+        },
+        {
+          "name": "Subway Tickets",
+          "from": "Kevin",
+          "amount": -5.6,
+          "time": "11:57 AM 9/4/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 2,
+      "name": "Karaoke",
+      "time": "9/5/17",
+      "sub_transactions": [
+        {
+          "name": "Karaoke",
+          "from": "Daniel",
+          "amount": -5,
+          "time": "4:23 PM 9/5/17"
+        },
+        {
+          "name": "Karaoke",
+          "from": "Kevin",
+          "amount": -5,
+          "time": "4:23 PM 9/5/17"
+        }
+      ],
+      "amount": -25
+    },
+    {
+      "id": 2,
+      "name": "HuangPu River Sightseeing",
+      "time": "9/3/17",
+      "sub_transactions": [
+        {
+          "name": "HuangPu River Sightseeing",
+          "from": "Daniel",
+          "amount": -25,
+          "time": "4:47 PM 9/3/17"
+        },
+        {
+          "name": "HuangPu River Sightseeing",
+          "from": "Kevin",
+          "amount": -25,
+          "time": "4:47 PM 9/3/17"
+        }
+      ],
+      "amount": -25
     }
   ]
 }
